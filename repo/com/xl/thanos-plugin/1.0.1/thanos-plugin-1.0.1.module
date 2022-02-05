@@ -1,0 +1,73 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.xl",
+    "module": "thanos-plugin",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "thanos-plugin-1.0.1.jar",
+          "url": "thanos-plugin-1.0.1.jar",
+          "size": 22523681,
+          "sha512": "5fab907e5c52528c34cccace2b6ddb5bc54810560f18c03422c9e334cc2bc43f6027bd97bf860f269634cb585f29209af11fc94f3a24b5a9e014dd37335b23a9",
+          "sha256": "c5ace1a01ac842f188f325ca52aee2609ed96daaf0e980323a441858b9a603fe",
+          "sha1": "d172a3cbf54efb212ab56db17bf04c346346644c",
+          "md5": "2666f781d1cff36266fb91c688327e8b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.0.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "thanos-plugin-1.0.1.jar",
+          "url": "thanos-plugin-1.0.1.jar",
+          "size": 22523681,
+          "sha512": "5fab907e5c52528c34cccace2b6ddb5bc54810560f18c03422c9e334cc2bc43f6027bd97bf860f269634cb585f29209af11fc94f3a24b5a9e014dd37335b23a9",
+          "sha256": "c5ace1a01ac842f188f325ca52aee2609ed96daaf0e980323a441858b9a603fe",
+          "sha1": "d172a3cbf54efb212ab56db17bf04c346346644c",
+          "md5": "2666f781d1cff36266fb91c688327e8b"
+        }
+      ]
+    }
+  ]
+}
