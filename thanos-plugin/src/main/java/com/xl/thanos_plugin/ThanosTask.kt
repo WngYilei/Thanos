@@ -34,8 +34,7 @@ abstract class ThanosTask : DefaultTask() {
     fun taskAction() {
         val jpgs = mutableListOf<File>()
         val pngs = mutableListOf<File>()
-        val apPath =
-            project.buildDir.path + "//intermediates/processed_res/${variantName.toLowerCase()}/out/resources-${variantName.toLowerCase()}.ap_"
+        val apPath = project.buildDir.path + "//intermediates/processed_res/${variantName.toLowerCase()}/out/resources-${variantName.toLowerCase()}.ap_"
         val apFile = File(apPath)
         val apOut = File(apFile.parent + "/ap")
         if (apOut.exists()) apOut.delete()
@@ -122,7 +121,7 @@ abstract class ThanosTask : DefaultTask() {
     }
 
     private fun convertWebp(tool: String, file: File, noValidConvert: MutableList<File>) {
-        //转换wenp
+        //转换webp
         var name = file.name
         name = name.substring(0, name.lastIndexOf("."))
         val output = File(file.parent, "${name}.webp")

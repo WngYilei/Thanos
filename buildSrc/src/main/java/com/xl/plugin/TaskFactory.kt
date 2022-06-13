@@ -1,8 +1,10 @@
 package com.xl.plugin
-import org.gradle.api.Project
-object TaskFactory {
 
-    fun  createThanosTask(
+import com.android.build.gradle.internal.dsl.BaseAppModuleExtension
+import org.gradle.api.Project
+
+object TaskFactory {
+    fun createThanosTask(
         project: Project,
         variant: String,
         taskName: String = "Thanos",
@@ -16,7 +18,12 @@ object TaskFactory {
         project.afterEvaluate {
             task.get().dependsOn("process${variant}Resources")
             project.tasks.getByName("merge${variant}JavaResource").dependsOn(task)
+
+            val baseAppModuleExtension = project.extensions.getByType(BaseAppModuleExtension::class.java)
+            println(baseAppModuleExtension.signingConfigs.getByName("release").storeFile)
         }
+
+
     }
 }
 

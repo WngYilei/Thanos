@@ -7,6 +7,8 @@
       <module name="Fast.fast-build" target="1.7" />
       <module name="Thanos.app" target="11" />
       <module name="Thanos.buildSrc" target="11" />
+      <module name="Thanos.buildSrc.main" target="11" />
+      <module name="Thanos.buildSrc.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

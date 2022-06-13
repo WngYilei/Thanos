@@ -4,7 +4,7 @@ plugins {
     id("thanos-plugin")
 //    id("thanos")
 }
-apply<com.xl.plugin.apk.ApkPlugin>()
+//apply<com.xl.plugin.apk.ApkPlugin>()
 android {
     compileSdk = 30
 
